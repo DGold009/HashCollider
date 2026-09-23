@@ -1,0 +1,6 @@
+# Development and test dependencies (not needed to run HashCollider).
+#   pytest - test runner            (make test)
+#   ruff   - linter and formatter   (make lint, make format)
+-r requirements.txt
+pytest>=7.4
+ruff>=0.5

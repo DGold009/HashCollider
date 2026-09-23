@@ -1,0 +1,32 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Packaging / build output
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Generated HashCollider output (experiment results are regenerated locally)
+/collision.json
+/collision*.json
+/reports/
+*.json.tmp
+
+# Editors and OS files
+.idea/
+.vscode/
+*.swp
+*~
+.DS_Store
