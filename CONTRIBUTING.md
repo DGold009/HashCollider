@@ -21,7 +21,7 @@ correctness and clear explanations matter more than raw speed.
 
    ```bash
    git clone <your-fork-url>
-   cd hashcollider
+   cd HashCollider
    python3 -m venv .venv
    source .venv/bin/activate
    make install          # pip install -r requirements-dev.txt && pip install -e .

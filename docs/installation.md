@@ -23,8 +23,8 @@ Kali marks the system Python as "externally managed" (PEP 668), so `pip install`
 virtual environment is refused. Use a venv:
 
 ```bash
-git clone <repository>
-cd hashcollider
+git clone https://github.com/DGold009/HashCollider.git
+cd HashCollider                     # case-sensitive: the clone folder is "HashCollider"
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt     # no packages: HashCollider uses only the stdlib

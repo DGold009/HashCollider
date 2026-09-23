@@ -35,8 +35,17 @@ which python                         # should point into .venv/
 - Forgot to activate? The prompt shows `(.venv)` when active. Re-run `source .venv/bin/activate`
   in every new terminal.
 - Broken venv after a Python upgrade: `rm -rf .venv` and recreate it.
+- `The virtual environment was not created successfully because ensurepip is not available`:
+  install `python3-venv`, then delete the half-created folder (`rm -rf .venv`) and run
+  `python3 -m venv .venv` again.
 
 ## Package installation
+
+- `cd: no such file or directory: hashcollider` - the repository clones into `HashCollider`
+  and Linux paths are case-sensitive: `cd HashCollider`. If that `cd` failed, the following
+  commands ran in the wrong directory, which causes the next two errors.
+- `Could not open requirements file` or `... does not appear to be a Python project` - you
+  are not in the repository folder. `cd` into it (`ls` should show `pyproject.toml`).
 
 - `pip install -e .` fails with an old pip/setuptools: upgrade them inside the venv:
   `python -m pip install --upgrade pip setuptools`.

@@ -53,13 +53,17 @@ benchmarks algorithms and produces Markdown reports.
 ## Installation
 
 ```bash
-git clone <repository>
-cd hashcollider
+sudo apt update && sudo apt install -y python3-venv   # once; Kali does not always ship it
+git clone https://github.com/DGold009/HashCollider.git
+cd HashCollider                                        # Linux folder names are case-sensitive
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 pip install -e .
 ```
+
+If `python3 -m venv .venv` reports that `ensurepip is not available`, install
+`python3-venv` (first line above), delete the half-created `.venv` folder and run it again.
 
 `requirements.txt` is intentionally empty of packages: HashCollider only uses the
 standard library. For development (tests and linting):
